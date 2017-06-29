@@ -1,0 +1,24 @@
+h1{
+  color: #ffa500;
+  font-size: 4em;
+  font-style: italic;
+
+}
+
+img{
+  width: 400px
+  height: auto;
+}
+
+body{
+  background-color: hotpink
+}
+
+.highlight{
+  background-color: pink;
+}
+
+#subtitle{
+  font-size: .75cm;
+  font-style: italic;
+}
