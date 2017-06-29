@@ -18,6 +18,10 @@ body{
   background-color: pink;
 }
 
+.content{
+    font-style: italic;
+}
+
 #subtitle{
   font-size: .75cm;
   font-style: italic;
