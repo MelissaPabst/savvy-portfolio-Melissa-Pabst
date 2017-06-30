@@ -1,0 +1,23 @@
+{
+  "name": "melissapabst",
+  "version": "1.0.0",
+  "description": "An example portfolio project for the June 2017 Savvy Coders Cohort",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "http-server ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MelissaPabst/savvy-portfolio-Melissa-Pabst.git"
+  },
+  "author": "Melissa Pabst",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MelissaPabst/savvy-portfolio-Melissa-Pabst/issues"
+  },
+  "homepage": "https://github.com/MelissaPabst/savvy-portfolio-Melissa-Pabst#readme",
+  "devDependencies": {
+    "http-server": "^0.10.0"
+  }
+}
