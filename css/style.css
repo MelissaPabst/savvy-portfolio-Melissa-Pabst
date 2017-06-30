@@ -6,8 +6,11 @@ h1{
 }
 
 img{
-  width: 400px
-  height: auto;
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
 }
 
 body{
@@ -18,9 +21,9 @@ body{
   background-color: pink;
 }
 
-.content{
-    font-style: italic;
-}
+.container{
+    max-width: 750px;
+    margin: 0 auto;}
 
 #subtitle{
   font-size: .75cm;
