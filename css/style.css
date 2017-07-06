@@ -23,10 +23,34 @@ body{
 
 .container{
     max-width: 750px;
-    margin: 0 auto;}
+    margin: 0 auto;
+    padding-right: 10em;
+}
 
 .content{
-    
+    margin: 0 auto;
+
+}
+
+.sidebar{
+        background-color: purple;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 10em;
+        height: 100vh;
+}
+
+.relative{
+    position: relative;
+}
+
+.avatar{
+    margin: 1em;
+    width: 2em;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 #subtitle{
