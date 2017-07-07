@@ -32,14 +32,44 @@ body{
 
 }
 
+.icon{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 4em;
+    z-index: 5;
+}
+
 .sidebar{
+        padding-top: 5em;
         background-color: purple;
         position: fixed;
         top: 0;
-        right: 0;
+        right: -10em;
         width: 10em;
         height: 100vh;
+        transition: right 0.5s ease;
 }
+
+.icon:hover + .sidebar{
+    background-color: purple;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 10em;
+    height: 100vh;
+}
+
+.sidebar:hover{
+    background-color: purple;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 10em;
+    height: 100vh;
+}
+
+
 
 .relative{
     position: relative;
@@ -52,6 +82,9 @@ body{
     top: 0;
     left: 0;
 }
+
+
+
 
 #subtitle{
   font-size: .75cm;
