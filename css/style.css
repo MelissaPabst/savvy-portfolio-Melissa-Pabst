@@ -2,6 +2,7 @@ h1{
   color: #9c27b0;
   font-size: 4em;
   font-style: italic;
+  text-align: center;
 
 }
 
@@ -89,4 +90,27 @@ body{
 #subtitle{
   font-size: .75cm;
   font-style: italic;
+}
+
+form{
+    margin: 0 auto;
+    max-width: 750px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+input{
+    margin: 1em;
+}
+
+input[type='text'],
+input[type='password'],
+input[type='email']{
+    font-size: 1em;
+    padding: 0.5em;
+    background-color: white;
 }
