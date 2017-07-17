@@ -1,8 +1,9 @@
 h1{
-  color: #9c27b0;
+  color: black;
   font-size: 4em;
   font-style: italic;
   text-align: center;
+  font-family: 'Megrim', serif;
 
 }
 
@@ -15,7 +16,7 @@ img{
 }
 
 body{
-  background-color: hotpink
+  background-color: white
 }
 
 .highlight{
@@ -30,30 +31,29 @@ body{
 
 .content{
     margin: 0 auto;
-
 }
 
 .icon{
     position: fixed;
     top: 0;
     right: 0;
-    width: 4em;
+    width: 2em;
     z-index: 5;
 }
 
 .sidebar{
-        padding-top: 5em;
-        background-color: purple;
-        position: fixed;
-        top: 0;
-        right: -10em;
-        width: 10em;
-        height: 100vh;
-        transition: right 0.5s ease;
+    padding-top: 5em;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    right: -10em;
+    width: 10em;
+    height: 100vh;
+    transition: right 0.5s ease;
 }
 
 .icon:hover + .sidebar{
-    background-color: purple;
+    background-color: white;
     position: fixed;
     top: 0;
     right: 0;
@@ -62,7 +62,7 @@ body{
 }
 
 .sidebar:hover{
-    background-color: purple;
+    background-color: white;
     position: fixed;
     top: 0;
     right: 0;
