@@ -18,6 +18,10 @@
   },
   "homepage": "https://github.com/MelissaPabst/savvy-portfolio-Melissa-Pabst#readme",
   "devDependencies": {
+    "eslint": "^4.2.0",
     "http-server": "^0.10.0"
+  },
+  "dependencies": {
+    "milligram": "^1.3.0"
   }
 }
