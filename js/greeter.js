@@ -12,4 +12,4 @@ var checkUserName = function checkUserName(){
 
 checkUserName();
 
-titleElement.textContent = titleText + "Dontcha know, " + userName;
+titleElement.textContent = titleText + " Dontcha know, " + userName + " ?";
