@@ -54,4 +54,4 @@ var runAdventure = function runAdventure(){
     }
 };
 
-runAdventure();
+runAdventure( "intro" );
