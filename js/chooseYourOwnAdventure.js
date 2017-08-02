@@ -8,49 +8,44 @@ var story = {
         "options": [ "yes", "no" ]
     },
     "green": {
-        "prompt": "You chose the green door, where a beach awaits.",
+        "prompt": "You chose the green door, where a beach awaits. You panic and make friends with Wilson, as you are now stranded on a deserted island.",
     },
-    "castle": {
-        "prompt": "You enterened the castle and it is old and dusty.",
+    "yes": {
+        "prompt": "You entered the castle and it is old and dusty. You get a respiratory infection and die.",
     },
-    "beach": {
-        "prompt": "Congrats! The beach option is pristine and you can relax!"
-    }
+    "no": {
+        "prompt": "You did not enter the castle and kept walking, getting eaten by wolves ten minutes later.",
+    },
 };
 
-var response = prompt( story.intro.prompt );
+var response;
+// global variable. undefinied.
 
 var outputToUser = function outputToUser( choice ){
     document.querySelector( "#output" ).textContent = story[choice].prompt;
+    // names variable outputToUser as function that finds the next prompt for the user.
+    // result placed in choice local variable
 };
 
 var responseFromUser = function responseFromUser( choice ){
     response = prompt( story[choice].prompt );
+    // names responseFromUser as the response the fxn gathers from the prompt
 };
 
-var runAdventure = function runAdventure(){
-    if( response === "red" ){
-        responseFromUser( "red" );
+var runAdventure = function runAdventure( branch ){
+    var options = branch.options;
 
-        if( response === "yes" ){
-            responseFromUser( "castle" );
-        }
-        else if( response === "no" ){
-            outputToUser( "beach" );
-        }
-        else{
-            responseFromUser( "red" );
+    responseFromUser( branch );
+    // calls responseFromUser and places result of fxn in branch local variable
 
-            runAdventure();
-        }
+    if( response === story[branch].options[0] ){
+        responseFromUser( story[branch].options[0] );
     }
-    else if( response === "green" ){
-        outputToUser( "green" );
+    else if( response === story[branch].options[1] ){
+        outputToUser( story[branch].options[1] );
     }
     else{
-        response = prompt( story.intro.prompt );
-
-        runAdventure();
+        runAdventure( branch );
     }
 };
 
